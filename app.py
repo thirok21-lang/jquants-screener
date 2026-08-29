@@ -53,7 +53,7 @@ def update_history(df, api_key):
 
     while d <= today:
         if d.weekday() < 5:
-            ds = d.strftime("%Y-%m-%d")
+            ds = d.strftime("%Y%m%d")
             status.write(f"不足データ取得中：{ds}")
 
             for retry in range(4):
