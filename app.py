@@ -88,7 +88,7 @@ def update_history(df, api_key):
                         time.sleep(60)
                         continue
 
-                    status.error(f"{ds}：HTTP {r.status_code}")
+                   status.error(f"{ds}: HTTP {r.status_code} / {r.text}")
                     break
 
                 except Exception as e:
